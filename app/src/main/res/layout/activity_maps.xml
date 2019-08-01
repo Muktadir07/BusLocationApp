@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:id="@+id/locationLOUT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+            <TextView
+                android:id="@+id/currentLocationTV"
+                android:layout_weight="0"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textSize="@dimen/midfont"
+                android:text="Now At"
+                android:textAlignment="center"
+                android:textColor="@color/colorViolet"
+                android:background="@color/colorPrimary"
+                android:layout_marginHorizontal="3dp"/>
+            <EditText
+                android:id="@+id/currentlocationET"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Location"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/destinationTV"
+                android:layout_weight="0"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textSize="@dimen/midfont"
+                android:text="Destination"
+                android:textAlignment="center"
+                android:textColor="@color/colorViolet"
+                android:background="@color/colorPrimary"
+                android:layout_marginHorizontal="3dp"/>
+            <EditText
+                android:id="@+id/destinationET"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Destination"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="3dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/map"
+        android:layout_below="@id/locationLOUT"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorWhite"
+        android:text="Find My Bus"
+        android:textColor="@color/colorViolet"
+        android:layout_marginBottom="20dp"
+        android:onClick="goBacktoFindMyBus"/>
+</RelativeLayout>
