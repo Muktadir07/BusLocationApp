@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusInformation">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bus Name"
+                android:textAlignment="center"
+                android:layout_weight="4"/>
+            <EditText
+                android:id="@+id/busNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bus name here"
+                android:textAlignment="center"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bus Position"
+                android:textAlignment="center"
+                android:layout_weight="4"/>
+            <EditText
+                android:id="@+id/busPositionET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bus position"
+                android:textAlignment="center"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arival or Depature"
+                android:textAlignment="center"
+                android:layout_weight="4"/>
+            <EditText
+                android:id="@+id/arival_or_depET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Arival or depature"
+                android:textAlignment="center"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addBusInfoBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Add Bus Data"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

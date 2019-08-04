@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "367772254147",
+    "firebase_url": "https://bee-technology-projects.firebaseio.com",
+    "project_id": "bee-technology-projects",
+    "storage_bucket": "bee-technology-projects.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367772254147:android:27da4655f016ec97",
+        "android_client_info": {
+          "package_name": "com.example.buslocation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367772254147-mrkd17clg81levndkh0l8483f4hsc58v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.buslocation",
+            "certificate_hash": "641cbf556029680ff6eea4740b9f568fb165221e"
+          }
+        },
+        {
+          "client_id": "367772254147-en5diofc3v9ov9rehntutfdprl22082l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrPht9FMRSinJN2J9GlFw30T6r9ZpXkNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367772254147-en5diofc3v9ov9rehntutfdprl22082l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
