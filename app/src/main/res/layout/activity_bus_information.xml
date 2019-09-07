@@ -5,10 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BusInformation">
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <Spinner
+            android:id="@+id/butNameSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+        </Spinner>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -18,17 +29,19 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="4"
                 android:text="Bus Name"
-                android:textAlignment="center"
-                android:layout_weight="4"/>
+                android:textAlignment="center" />
+
             <EditText
                 android:id="@+id/busNameET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:hint="Bus name here"
-                android:textAlignment="center"
-                android:layout_weight="1"/>
+                android:textAlignment="center" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,17 +51,19 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="4"
                 android:text="Bus Position"
-                android:textAlignment="center"
-                android:layout_weight="4"/>
+                android:textAlignment="center" />
+
             <EditText
                 android:id="@+id/busPositionET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:hint="Bus position"
-                android:textAlignment="center"
-                android:layout_weight="1"/>
+                android:textAlignment="center" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,27 +73,28 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="4"
                 android:text="Arival or Depature"
-                android:textAlignment="center"
-                android:layout_weight="4"/>
+                android:textAlignment="center" />
+
             <EditText
                 android:id="@+id/arival_or_depET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:hint="Arival or depature"
-                android:textAlignment="center"
-                android:layout_weight="1"/>
+                android:textAlignment="center" />
         </LinearLayout>
 
         <Button
             android:id="@+id/addBusInfoBTN"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="Add Bus Data"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            />
+            android:text="Add Bus Data"
+            android:textAlignment="center" />
     </LinearLayout>
+
 
 </RelativeLayout>
